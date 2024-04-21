@@ -1,3 +1,3 @@
-# stackblitz-test
+# Portfolio 2024
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/mathum49/stackblitz-test)
+Website referencing my Front-end development projects and skills.

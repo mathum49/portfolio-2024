@@ -19,7 +19,6 @@ margin: 0 auto;
 
 header {
 background-color: #E8F0E4;
-min-height: 100vh;
 }
 
 .intro{
@@ -166,28 +165,33 @@ padding-bottom: 60px;
 margin: 20px 0;
 }
 
+.skill-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tech, .dev {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
 .skills h4{
 margin: 20px 0
 }
-
+ 
 .skills ul{
 padding: 0;
 display: flex;
 flex-direction: column;
-align-items: center;
 }
 
 .skills ul li {
-margin-bottom: 20px;
-width: 200px;
-justify-content: center;
+margin: 0;
 text-align: center;
-background-color: white;
 list-style: none;
 height: 35px;
-display: flex;
-align-items: center;
-border-radius: 25px;
 }
 
 /* About styling */
@@ -291,19 +295,6 @@ img{
   width: 80%;
 }
 
-.skills ul {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.skills ul li {
-    width: 250px;
-    margin: 20px 50px;
-}
 
 .about img {
     padding: 50px;
@@ -381,6 +372,7 @@ img{
 
 .skills {
   padding-bottom: 100px;
+  margin: 150px 0;
 }
 
 .skill-list{
