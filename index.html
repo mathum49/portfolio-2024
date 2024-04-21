@@ -1,23 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mathilde's Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/e5a738121e.js" crossorigin="anonymous"></script>
+  <meta name="theme-color" content="#fafafa">
+
+</head>
+
+<body>
+
+<header>
+<div class="content-wrapper">
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+
+    <div class="intro">
+      <h1>Hello! I am Mathilde,<br>a front-end web developer</h1>
+      <h3>I like building website, from an idea to an interactive interface with a focus on user experience.</h3>
+    </div>
+  </div>
+</header>
+
+<main>
+  
+  <section id="projects" class="projects">
+
+    <h2>Projects</h2>
+
+      <div class="content-wrapper">
+        
+
+        <div class="project">
+          <div class="image">
+            <a href="https://jjvl93.csb.app/" target="_blank">
+              <img src="./img/stickynotes-1.png" alt="image of a website screenshot displayed on a laptop">
+            </a>
+            </div>
+          <h4>Sticky Note App</h4>
+          <div class="details">
+            <p>An interactive app that will let users create “sticky notes” on their computer to keep track of to-do items. Notes can be edited or deleted. The user can also search through the existing notes.</p>
+            <h5><span>Skills: </span>ES6, JSX, React</h5>
+            <h5><span>Tools: </span>CodeSandbox</h5>
+          </div>
+    
+          <div class="button">
+            <a href="https://jjvl93.csb.app/" target="_blank">Live page</a>
+          </div>
+        </div>
+
+        <div class="project">
+            <div class="image">
+              <a href="https://mathum49.github.io/unplugged/" target="_blank">
+                <img src="./img/unplugged-1.png" alt="image of a website screenshot displayed on a laptop">
+              </a>
+              </div>
+          <h4>Unplugged</h4>
+          <div class="details">
+            <p>A 3-pages website from a design comp that adapts to mobile, tablet, and desktop screens. Unplugged is a company offering retreat for professionals in the tech industry.</p>
+            <h5><span>Skills: </span>HTML5, CSS3, Flexbox</h5>
+            <h5><span>Tools: </span>Visual Studio, GitHub</h5>
+          </div>
+          <div class="button">
+            <a href="https://mathum49.github.io/unplugged/" target="_blank">Live page</a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="image">
+            <a href="https://mathum49.github.io/guess-the-word/" target="_blank">
+              <img src="./img/guesstheword-1.png" alt="image of a website screenshot displayed on a laptop">
+            </a>
+            </div>
+          <h4>Guess the Word Game</h4>
+          <div class="details">
+            <p>An interactive game where players guess the word by entering one letter at a time. If the player guesses all the letters correctly before they use up their allotted guesses, they win.</p>
+            <h5><span>Skills: </span>Vanilla JavaScript</h5>
+            <h5><span>Tools: </span>GitHub</h5>
+          </div>
+          <div class="button">
+            <a href="https://mathum49.github.io/guess-the-word/" target="_blank">Live page</a>
+          </div>
+        </div>
+
+
+      </div> 
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="content-wrapper">
+      <h2>Skills</h2>
+        <div class="skill-list">
+
+        <div class="dev">
+          <h4>Developer Skills</h4>
+          <ul>
+            <li>React</li>
+            <li>Vue</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>CSS</li>
+            <li>HTML</li>
+          </ul>
+        </div>
+
+        <div class="tech">
+          <h4>Tech Stack</h4>
+          <ul>
+            <li>Visual Studio</li>
+            <li>Figma</li>
+            <li>CodeSandBox</li>
+            <li>Git/GitHub</li>
+            <li>Bitbucket</li>
+            <li>Jira</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="content-wrapper">
+      <!-- <h2>About</h2> -->
+      <div class="headline">
+        <div class="image"> 
+          <!-- replace .image with figure -->
+          <img src="./img/1645526588155.jpeg" alt="portrait picture">
+        </div>
+
+        <div class="presentation">
+        <h2>Hi there! I am Mathilde, a front-end web developer</h2>
+        <h3>I like building website, from an idea to an interactive interface with a focus on user experience.</h3>   
+
+      <!-- <div class="pres-details"> -->
+        <p>I love seeing code turning into life, being able to create websites that are attractive and functional.</p>
+        <p>With my background in customer relationships, I bring along skills to successfully communicate with customers and create solutions that fit their needs.
+        </p>     
+        <p>When I'm not working, pursuing side projects or getting lost reading through travel blogs, I can be found biking around the city or doing yoga.</p>   
+        <p><span>Can't wait to work with you!</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer>
+
+  <section id="contact" class="contact">
+    <div class="content-wrapper">
+      <h2>Let's Connect</h2>
+
+      <div class="contact-detail">
+    
+      <div class="hire">
+        <h4>Hire me</h4>
+        <p>0160-949-71282</p>
+        <p>mathilde.humeau@yahoo.com</p>
+      </div>
+
+      <div class="follow">
+        <h4>Follow me</h4>
+
+        <a href="https://www.linkedin.com/in/mathilde-humeau-26652b8a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/mathum49" target="_blank"><i class="fa-brands fa-github-square"></i></a>
+
+      </div>
+
+      <div class="meet">
+        <h4>Meet me</h4>
+        <p>Konstanz, Germany</p>
+        <p>Let's meet over coffee or Zoom!</p>
+      </div>
+    </div>
+    
+      <p class="copyright">Copyright 2022 | Mathilde Humeau</p>
+    </div>
+  </section>
+
+</footer>
+
+</body>
+
 </html>
+
