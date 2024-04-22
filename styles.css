@@ -19,11 +19,13 @@ margin: 0 auto;
 
 header {
 background-color: #E8F0E4;
+min-height: 50vh;
+
 }
 
 .intro{
 text-align: center;
-margin: 50px 0;
+padding: 50px 0;
 display: flex;
 flex-direction: column;}
 
@@ -76,7 +78,6 @@ border-radius: 25px;
 }
 
 .intro{
-min-height: 70vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -157,30 +158,22 @@ text-decoration: none;
 
 .skills {
 background-color: #EEE4F0;
-padding-top: 40px;
-padding-bottom: 60px;
-}
-
-.skills h2{
-margin: 20px 0;
 }
 
 .skill-list{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 50px;
+  flex-direction: column;
 }
 
 .tech, .dev {
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
+  margin: 30px;
 }
 
-.skills h4{
-margin: 20px 0
-}
- 
 .skills ul{
 padding: 0;
 display: flex;
@@ -194,10 +187,9 @@ list-style: none;
 height: 35px;
 }
 
-/* About styling */
+/* About styling -------*/
 
 .about{
-padding-top: 60px;
 padding-bottom: 80px;
 }
 
@@ -231,10 +223,6 @@ footer{
 background-color: #E8F0E4;
 }
 
-.contact{
-padding-top: 50px;
-}
-
 .contact h4{
 margin: 30px 0;
 }
@@ -265,170 +253,309 @@ padding-bottom: 60px;
 text-align: center;
 }
 
+/* waves ------------- */
 
-/* Tablet design */
-
-@media only screen and (min-width: 768px) {
-  
-.content-wrapper {
-max-width: 640px;
+.waves {
+  position: relative;
+  min-height: 15vh;
 }
 
-h1{
-font-size: 3em;
-line-height: 75px;
+svg {
+  position: absolute;
+  left: 0;
+  width: 100%;
 }
 
-nav ul li {
-padding: 5px 15px;
+/* first wave - bottom intro */
+
+.custom-shape-divider-bottom-1713801767 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
-nav ul li a{
-  font-size: 1em;
+.custom-shape-divider-bottom-1713801767 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
 }
 
-.intro{
-  margin: 50px 0;
+.custom-shape-divider-bottom-1713801767 .shape-fill {
+  fill: #FFFFFF;
 }
 
-img{
-  width: 80%;
-}
-
-
-.about img {
-    padding: 50px;
-    width: 50%;
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1713801767 svg {
+      width: calc(100% + 1.3px);
+      height: 50px;
   }
 }
 
-/* Desktop design */
+/* second wave - top skills  */
+.custom-shape-divider-top-1713801387 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1713801387 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-top-1713801387 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1713801387 svg {
+      width: calc(100% + 1.3px);
+      height: 50px;
+  }
+}
+/* third wave - bottom skills*/
+
+.custom-shape-divider-bottom-1713800645 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1713800645 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 59px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1713800645 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1713800645 svg {
+      width: calc(100% + 1.3px);
+      height: 36px;
+  }
+}
+
+/* footer wave */
+.custom-shape-divider-top-1713800969 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1713800969 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1713800969 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-top-1713800969 svg {
+      width: calc(100% + 1.3px);
+      height: 36px;
+  }
+}
+/* wave end */
+
+/* Tablet design *********************************************************************/
+
+@media only screen and (min-width: 768px) {
+
+  .content-wrapper {
+  max-width: 640px;
+  }
+
+  h1{
+  font-size: 3em;
+  line-height: 75px;
+  }
+
+  h2{
+    padding: 30px 0;
+    font-size: 3em;
+  }
+
+  .intro{
+    margin-top: 50px;
+  }
+
+  nav ul li {
+  padding: 5px 15px;
+  }
+
+  nav ul li a{
+    font-size: 1em;
+  }
+
+  .projects{
+    padding-bottom: 50px;
+  }
+  .intro{
+    padding: 50px 0;
+  }
+
+  img{
+    width: 80%;
+  }
+  .skill-list{
+  justify-content: space-evenly;
+  flex-direction: row ;
+  }
+
+  .about img {
+      padding: 50px;
+      width: 50%;
+    }
+}
+
+/* Desktop design *********************************************************************/
 @media only screen and (min-width: 1200px) {
   
-.content-wrapper {
-    max-width: 1140px;
-}
+  .content-wrapper {
+      max-width: 1140px;
+  }
 
-h1 {
-  font-size: 4em;
-  line-height: 100px; 
-}
+  h1 {
+    font-size: 4em;
+    line-height: 100px; 
+  }
 
-h2{
-  padding: 30px 0;
-  font-size: 3em;
-}
+  h3 {
+    font-size: 1.75em;
+    line-height: 45px;
 
-h3 {
-  font-size: 1.75em;
-  line-height: 45px;
+  }
 
-}
+  .intro{
+    min-height: 60vh;
+  }
 
-.intro{
-  min-height: 80vh;
-}
+  .intro h3{
+    padding: 0 150px 0 150px;
+  }
 
-.intro h3{
-  margin: 0 150px 150px 150px;
-}
+  nav ul{
+    justify-content: flex-end;
 
-nav ul{
-  justify-content: flex-end;
+  }
 
-}
+  nav ul li {
+    padding: 7px 20px;
+    margin: 0 15px;
+  }
 
-nav ul li {
-  padding: 7px 20px;
-  margin: 0 15px;
-}
+  .project .image{
+    min-height: 230px;
+  }
 
-.project .image{
-  min-height: 230px;
+  img{
+    width: 100%;
+  }
+  .projects{
+    margin: 50px 0;
+  }
 
-}
+  .projects .content-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
 
-img{
-  width: 100%;
-}
-.projects{
-  margin: 50px 0;
-}
+  .project{
+    width: 30%;
+    padding: 0px 50px;
+  }
 
-.projects .content-wrapper{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
+  .project h4{
+    height: 60px;
+  }
 
-.project{
-  width: 30%;
-  padding: 0px 50px;
-}
+  .details p{
+    height: 150px;
+  }
 
-.details{
-  min-height: 250px;
-}
+  .details h5{
+    height: 20px;
+  }
 
-.skills {
-  padding-bottom: 100px;
-  margin: 150px 0;
-}
+  .details{
+    min-height: 250px;
+  }
 
-.skill-list{
-  justify-content: space-evenly;
+  .headline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
 
-}
+  .presentation{
+    width: 50%;
+  }
 
-.tech, .dev{
-  margin-top: 50px;
-}
+  .headline .image {
+    padding: 0;
+    width: 35%;
+  }
 
-.headline{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 50px 0;
+  .headline .image img{
+    width: 100%;
+  }
 
-}
-
-.presentation{
-  width: 50%;
-}
-
-.headline .image {
-  padding: 0;
-  width: 35%;
-}
-
-.headline .image img{
-  width: 100%;
-}
-
-.about h2 {
-  font-size: 2.5em;
-  text-align: left;
-}
-
-.about h3 {
-    margin: 30px 0;
-    font-size: 1.25em;
-    line-height: 30px;
+  .about h2 {
+    font-size: 2.5em;
     text-align: left;
-}
-.pres-details{
-  margin: 30px 0;
+  }
 
-}
+  .about h3 {
+      margin: 30px 0;
+      font-size: 1.25em;
+      line-height: 30px;
+      text-align: left;
+  }
+  .pres-details{
+    margin: 30px 0;
+  }
 
-.contact-detail{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
-}
+  .contact-detail{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
 
-.hire, .follow, .meet {
-  margin: 0;
-  min-width: 30%;
-}
+  .hire, .follow, .meet {
+    margin: 0;
+    min-width: 30%;
+  }
 }
