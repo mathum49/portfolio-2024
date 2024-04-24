@@ -274,6 +274,7 @@ svg {
   border:none;
   height: auto;
   margin-bottom: -1px; 
+  margin-top: 1px;
 }
 
 /* first wave - bottom intro */
